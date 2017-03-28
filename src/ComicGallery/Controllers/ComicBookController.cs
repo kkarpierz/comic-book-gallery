@@ -4,13 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace ComicGallery.Controllers
-{
-    public class ComicBookController : Controller
-    {
-        public String Detail()
-        {
-            return "Hello from the comic view controller.";
+namespace ComicGallery.Controllers {
+    public class ComicBookController : Controller {
+        public ContentResult Detail() {
+            return new ContentResult() {
+                Content = "Hello from the comic view controller."
+            };
         }
     }
 }
