@@ -8,6 +8,6 @@ namespace ComicGallery.Controllers
 {
     public class ComicBookController : Controller
     {
-
+        int i;
     }
 }
