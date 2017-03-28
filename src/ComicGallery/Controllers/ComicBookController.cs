@@ -5,11 +5,16 @@ using System.Web;
 using System.Web.Mvc;
 
 namespace ComicGallery.Controllers {
+
     public class ComicBookController : Controller {
-        public ContentResult Detail() {
-            return new ContentResult() {
-                Content = "Hello from the comic view controller."
-            };
+
+        public ActionResult Detail() {
+            if (DateTime.Today.DayOfWeek == DayOfWeek.Tuesday) {
+                return Redirect("/ComicBook/Detail");
+            }
+            return Content("Hello from the Comic Book Controller");
         }
+
     }
+
 }
