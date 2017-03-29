@@ -6,7 +6,7 @@ using System.Web;
 namespace ComicGallery.Models {
     public class ComicBook {
         public int Id { get; set; }
-        public string seriesTitle { get; set; }
+        public string SeriesTitle { get; set; }
         public int IssueNumber { get; set; }
         public string DescriptionHtml { get; set; }
         public Artist[] Artists { get; set; }
@@ -14,13 +14,13 @@ namespace ComicGallery.Models {
 
         public string DisplayText {
             get {
-                return seriesTitle + " # " + IssueNumber;
+                return SeriesTitle + " # " + IssueNumber;
             }
         }
 
         public string CoverImageFile {
             get {
-                return seriesTitle.Replace(" ", "-").ToLower() + "-" + IssueNumber + ".jpg";
+                return SeriesTitle.Replace(" ", "-").ToLower() + "-" + IssueNumber + ".jpg";
             }
         }
 
