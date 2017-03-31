@@ -23,7 +23,7 @@ namespace ComicGallery.Controllers {
                 },
                 Favourite = true
             };
-
+               
             return View(comicBook);
         }
 
