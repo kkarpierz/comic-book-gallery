@@ -11,7 +11,7 @@ namespace ComicGallery.Controllers {
 
         public ActionResult Detail() {
             var comicBook = new ComicBook() {
-                SeriesTitle = "Moja Strona",
+                SeriesTitle = "The Amazing Spider Man",
                 IssueNumber = 700,
                 DescriptionHtml = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives... <strong>will Peter Parker?</strong></p>",
                 Artists = new Artist[] {
@@ -20,7 +20,8 @@ namespace ComicGallery.Controllers {
                     new Artist() { Name = "Victor Olazaba", Role = "Inks" },
                     new Artist() { Name = "Edgar Delgado", Role = "Colors" },
                     new Artist() { Name = "Chris Eliopoulos", Role = "Letters" }
-                }
+                },
+                Favourite = true
             };
 
             return View(comicBook);

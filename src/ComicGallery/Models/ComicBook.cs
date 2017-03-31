@@ -24,6 +24,13 @@ namespace ComicGallery.Models {
             }
         }
 
+        public string FavouriteTxt {
+            get {
+                if (Favourite)
+                    return "Yes";
+                return "No";
+            }
+        }
 
     }
 }
