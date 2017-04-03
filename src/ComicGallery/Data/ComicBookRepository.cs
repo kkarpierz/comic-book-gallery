@@ -56,6 +56,11 @@ namespace ComicGallery.Data {
         };
 
 
+        public ComicBook[] GetComicBooks() {
+            return _comicBooks;
+        }
+
+
         public ComicBook GetComicBook(int id) {
             foreach (var comicBook in _comicBooks) {
                 if (id == comicBook.Id)
